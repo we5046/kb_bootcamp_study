@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function Call10(callback) {
+            for (let i = 0; i < 10; i++) {
+                callback(i + 1);
+            }
+        }
+
+        Call10(function (cnt) { alert('함수 호출' + cnt); })
+
+    </script>
+</body>
+
+</html>
