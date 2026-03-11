@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            /* 이거 안쓰면 ul에 백그라운드 같은 속성이 적용안됨? */
+            overflow: hidden;
+        }
+
+        li {
+            padding: 10px;
+            list-style: none;
+            float: left;
+        }
+
+        li:first-child {
+            border-radius: 10% 0 0 10%;
+        }
+
+        li:last-child {
+            border-radius: 0 10% 10% 0;
+        }
+
+        li:nth-child(2n+1) {
+            background-color: brown;
+        }
+
+        li:nth-child(2n) {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>첫 번째</li>
+        <li>두 번째</li>
+        <li>세 번째</li>
+        <li>네 번째</li>
+        <li>다섯 번째</li>
+        <li>여섯 번째</li>
+        <li>일곱 번째</li>
+        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque repudiandae deleniti, quisquam aspernatur
+            officiis ab optio aliquam, deserunt dolor blanditiis officia nulla amet illo debitis exercitationem odit
+            ducimus facilis? Blanditiis id natus, inventore rerum porro, error asperiores voluptatibus praesentium totam
+            tempora dolorem neque accusantium officiis excepturi sequi provident vero perferendis.</h1>
+    </ul>
+</body>
+
+</html>
